@@ -1,0 +1,95 @@
+$fontGeorgia: Georgia, 'Times New Roman', Times, serif;
+$fontArial: Arial, Helvetica, sans-serif;
+$color-primary: #F1CDB3;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(71, 32, 32);
+
+    .header-wrapper {
+        max-width: 1280px;
+        padding: 40px 60px;
+        margin: 0px auto;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 184px;
+
+            h1 {
+                color: $color-primary;
+                font-family: $fontGeorgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                -webkit-text-stroke: .3px black;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin: 0;
+            }
+
+            p {
+                font-family: $fontArial;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #FFFFFF;
+                letter-spacing: 0.1em;
+                padding-top: 10px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+nav {
+
+    ul {
+        width: fit-content;
+        margin: 0px -17.5px;
+
+        li {
+            font-family: $fontArial;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            list-style: none;
+            display: inline-block;
+            margin: 0 17.5px;
+
+            a{
+                text-decoration: none;
+                color: #CDCDCD;
+                transition: .2s;
+            }
+
+            a:hover {
+                color: #FAFAFA;
+                transition: .2s;
+            }
+
+            .main-link {
+                border-bottom: 3px solid $color-primary;
+                color: #FAFAFA;
+            }
+
+            a:active {
+                border-bottom: 3px solid $color-primary;
+                color: #FAFAFA;
+            }
+        }
+    }
+}
+
+
+
