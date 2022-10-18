@@ -151,9 +151,8 @@ nav ul li a:active {
   color: #292929;
   background-color: #F1CDB3;
   border-radius: 100px;
-  padding: 15px 45px;
+  padding: 15px 46px;
   display: inline-block;
-  width: 207px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -210,4 +209,115 @@ nav ul li a:active {
   width: 100%;
   max-width: 430px;
   margin-top: 25px;
+}
+
+.our-friends {
+  background-color: #F6F6F6;
+}
+.our-friends .our-friends-wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.our-friends .our-friends-wrapper section h3 {
+  max-width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+.our-friends .our-friends-wrapper section .carusel {
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-friends .our-friends-wrapper section .carusel .arrow {
+  width: 52px;
+  height: 52px;
+}
+.our-friends .our-friends-wrapper section .carusel button {
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.our-friends .our-friends-wrapper section .carusel button:hover {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0px 8px;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card {
+  background: #FAFAFA;
+  border-radius: 9px;
+  margin: 0px 45px;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card figcaption {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.055em;
+  color: #545454;
+  margin: 30px 0px;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card button {
+  padding: 15px 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #292929;
+  display: block;
+  max-width: 187px;
+  margin: 30px auto;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card:hover button {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card:hover {
+  cursor: pointer;
+}
+.our-friends .our-friends-wrapper section a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #292929;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  padding: 15px 46px;
+  display: block;
+  width: 261px;
+  margin: 0px auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.our-friends .our-friends-wrapper section a:hover {
+  background-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }

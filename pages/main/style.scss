@@ -155,9 +155,8 @@ nav {
                 color: #292929;
                 background-color: $color-primary;
                 border-radius: 100px;
-                padding: 15px 45px;
+                padding: 15px 46px;
                 display: inline-block;
-                width: 207px;
                 transition: .2s;
             }
 
@@ -214,6 +213,120 @@ nav {
             width: 100%;
             max-width: 430px;
             margin-top: 25px;
+        }
+    }
+}
+
+.our-friends {
+    background-color: #F6F6F6;
+
+    .our-friends-wrapper {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        section {
+            h3 {
+                max-width: 400px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            .carusel {
+                margin: 60px 0;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+
+                .arrow {
+                    width: 52px;
+                    height: 52px;
+                }
+
+                button {
+                    border: 2px solid $color-primary;
+                    border-radius: 100px;
+                    transition: .2s;
+                }
+
+                button:hover {
+                    background-color: $hover-primary;
+                    border-color: $hover-primary;
+                    transition: .2s;
+                    cursor: pointer;
+                }
+
+                .carusel-container {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin: 0px 8px;
+
+                    .card {
+                        background: #FAFAFA;
+                        border-radius: 9px;
+                        margin: 0px 45px;
+
+                        figcaption {
+                            font-family: $fontGeorgia;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 23px;
+                            text-align: center;
+                            letter-spacing: 0.055em;
+                            color: #545454;
+                            margin: 30px 0px;
+                        }
+
+                        button {
+                            padding: 15px 45px;
+                            font-family: $fontGeorgia;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 22px;
+                            letter-spacing: 0.03em;
+                            color: #292929;
+                            display: block;
+                            max-width: 187px;
+                            margin: 30px auto;
+                        }
+                    }
+
+                    .card:hover button {
+                        background-color: $hover-primary;
+                        border-color: $hover-primary;
+                        transition: .2s;
+                        cursor: pointer;
+                    }
+
+                    .card:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-family: $fontGeorgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 130%;
+                letter-spacing: 0.05em;
+                color: #292929;
+                background-color: $color-primary;
+                border-radius: 100px;
+                padding: 15px 46px;
+                display: block;
+                width: 261px;
+                margin: 0px auto;
+                transition: .2s;
+            }
+
+            a:hover {
+                background-color: $hover-primary;
+                transition: .2s;
+            }
         }
     }
 }
