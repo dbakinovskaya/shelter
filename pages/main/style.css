@@ -6,14 +6,20 @@
   scroll-behavior: smooth;
 }
 
+[class*=-wrapper] {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 header {
   width: 100%;
-  background-color: rgb(71, 32, 32);
+  position: absolute;
 }
 header .header-wrapper {
-  max-width: 1280px;
-  padding: 60px 40px;
-  margin: 0px auto;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +40,10 @@ header .header-wrapper .logo h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  -webkit-text-stroke: 0.3px black;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.054em;
+  -webkit-text-stroke: 0.7px black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
@@ -85,4 +93,63 @@ nav ul li .main-link {
 nav ul li a:active {
   border-bottom: 3px solid #F1CDB3;
   color: #FAFAFA;
+}
+
+.not-only {
+  width: 100%;
+  background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
+  padding-top: 125.25px;
+}
+.not-only .not-only-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.not-only .not-only-wrapper section {
+  width: 100%;
+  max-width: 460px;
+  padding: 222.78px 0px 243px 0px;
+}
+.not-only .not-only-wrapper section h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+  max-width: 310px;
+}
+.not-only .not-only-wrapper section p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #CDCDCD;
+  padding: 42px 0px;
+}
+.not-only .not-only-wrapper section a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  color: #292929;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  padding: 15px 45px;
+  display: block;
+  width: 207px;
+}
+.not-only .not-only-wrapper div {
+  width: 100%;
+  margin: 60px 0px 0px 42px;
+}
+.not-only .not-only-wrapper div img {
+  display: block;
+  width: 100%;
 }
