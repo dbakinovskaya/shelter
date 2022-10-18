@@ -330,3 +330,48 @@ nav {
         }
     }
 }
+
+.help-wrapper {
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    section {
+        h3 {
+            max-width: 310px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        ul {
+            margin: 37.5px 27px -22.5px 27px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                font-family: $fontGeorgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 115%;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #545454;
+                margin: 22.5px 60px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 30px;
+                }
+
+                .shampoos {
+                    width: 31.3px;
+
+                }
+            }
+        }
+    }
+}
