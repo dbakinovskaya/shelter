@@ -436,3 +436,55 @@ nav ul li a:active {
   color: #B2B2B2;
   margin-top: 20px;
 }
+
+footer {
+  background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
+  padding-top: 40px;
+}
+footer h3 {
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+footer a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #F1CDB3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer a img {
+  margin-right: 20px;
+}
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-wrapper .contacts {
+  max-width: 279px;
+}
+footer .footer-wrapper .contacts a {
+  margin-top: 40px;
+}
+footer .footer-wrapper .location {
+  max-width: 302px;
+}
+footer .footer-wrapper .location a {
+  margin-top: 32px;
+}
+footer .footer-wrapper div img {
+  display: block;
+}

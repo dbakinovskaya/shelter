@@ -427,8 +427,6 @@ nav {
                 img {
                     margin-right: 15px;
                 }
-
-
             }
 
             a:hover {
@@ -448,5 +446,58 @@ nav {
             }
         }
     }
+}
 
+footer {
+    background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
+    padding-top: 40px;
+
+    h3 {
+        color: #FFFFFF;
+        margin-top: 16px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $fontGeorgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color: $color-primary;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .contacts {
+            max-width: 279px;
+
+            a {
+                margin-top: 40px;
+            }
+        }
+
+        .location {
+            max-width: 302px;
+
+            a {
+                margin-top: 32px;
+            }
+        }
+
+        div {
+            img {
+                display: block;
+            }
+        }
+    }
 }
