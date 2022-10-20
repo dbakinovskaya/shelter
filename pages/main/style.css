@@ -363,3 +363,76 @@ nav ul li a:active {
 .help-wrapper section ul li .shampoos {
   width: 31.3px;
 }
+
+.donation {
+  background-color: #F6F6F6;
+}
+.donation .donation-wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.donation .donation-wrapper div img {
+  display: inline-block;
+  margin: 10px 0px;
+}
+.donation .donation-wrapper section {
+  max-width: 380px;
+  margin-left: 30px;
+}
+.donation .donation-wrapper section .subheading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 20px 0px;
+}
+.donation .donation-wrapper section a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 349px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.058em;
+  color: #545454;
+  padding: 10px 15px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  height: 43px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.donation .donation-wrapper section a img {
+  margin-right: 15px;
+}
+.donation .donation-wrapper section a:hover {
+  background-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.donation .donation-wrapper section .legal-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+  margin-top: 20px;
+}
