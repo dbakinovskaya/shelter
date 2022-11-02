@@ -29,6 +29,13 @@ header{
         justify-content: space-between;
         align-items: center;
 
+        .logo-link {
+            display: block;
+            width: 184px;
+            height: 60px;
+            position: absolute;
+        }
+
         .logo {
             width: 184px;
 
