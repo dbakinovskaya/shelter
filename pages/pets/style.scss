@@ -2,6 +2,7 @@ $fontGeorgia: Georgia, 'Times New Roman', Times, serif;
 $fontArial: Arial, Helvetica, sans-serif;
 $color-dark: #545454;
 $color-primary: #F1CDB3;
+$hover-primary: #FDDCC4;
 
 * {
     box-sizing: border-box;
@@ -105,6 +106,182 @@ nav {
     }
 }
 
-.our-pets {
+.our-friends {
+    background-color: #F6F6F6;
 
+    .friends-wrapper {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        h2 {
+            font-family: $fontGeorgia;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: $color-dark;
+            max-width: 400px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .pets-cards {
+            margin: 45px 0px;
+            display:flex;
+            flex-wrap: wrap;
+            gap:30px 40px;
+            justify-content: space-around;
+
+            .card {
+                background: #FAFAFA;
+                border-radius: 9px;
+                max-width: 270px;
+
+                figcaption {
+                    font-family: $fontGeorgia;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: center;
+                    letter-spacing: 0.055em;
+                    color: $color-dark;
+                    margin: 30px 0px;
+                }
+
+                button {
+                    padding: 15px 45px;
+                    font-family: $fontGeorgia;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: 0.03em;
+                    color: #292929;
+                    display: block;
+                    max-width: 187px;
+                    margin: 30px auto;
+                    border: 2px solid $color-primary;
+                    border-radius: 100px;
+                    transition: .2s;
+                }
+
+                button:hover {
+                    background-color: $hover-primary;
+                    border-color: $hover-primary;
+                    transition: .2s;
+                    cursor: pointer;
+                }
+
+            }
+
+            .card:hover button {
+                background-color: $hover-primary;
+                border-color: $hover-primary;
+                transition: .2s;
+                cursor: pointer;
+            }
+
+            .card:hover {
+                cursor: pointer;
+            }
+        }
+
+        .pagination {
+            margin: 0px auto;
+            width: fit-content;
+
+            button {
+                width: 52px;
+                height: 52px;
+                border-radius: 100px;
+                margin: 0px 10px;
+                font-family: $fontGeorgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 115%;
+                letter-spacing: 0.06em;
+                border: 2px solid #CDCDCD;
+                transition: .2s;
+            }
+
+            .active {
+                background-color: $color-primary;
+            }
+
+            .active, .next {
+                border: 2px solid $color-primary;
+
+            }
+
+            .next:hover {
+                background-color: $hover-primary;
+                border-color: $hover-primary;
+                transition: .2s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer {
+    background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
+    padding-top: 40px;
+
+    h2 {
+        font-family: $fontGeorgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        margin-top: 16px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $fontGeorgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        color: $color-primary;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .contacts {
+            max-width: 279px;
+
+            a {
+                margin-top: 40px;
+            }
+        }
+
+        .location {
+            max-width: 302px;
+
+            a {
+                margin-top: 32px;
+            }
+        }
+
+        div {
+            img {
+                display: block;
+            }
+        }
+    }
 }
