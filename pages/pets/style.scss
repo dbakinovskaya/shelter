@@ -1,0 +1,99 @@
+$fontGeorgia: Georgia, 'Times New Roman', Times, serif;
+$fontArial: Arial, Helvetica, sans-serif;
+$color-dark: #545454;
+$color-primary: #F1CDB3;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+[class*="-wrapper"] {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header{
+    width: 100%;
+
+    .header-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 184px;
+
+            h1 {
+                color: $color-dark;
+                font-family: $fontGeorgia;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 110%;
+                letter-spacing: 0.054em;
+                -webkit-text-stroke: .7px black;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin: 0;
+            }
+
+            p {
+                font-family: $fontArial;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #292929;
+                letter-spacing: 0.1em;
+                padding-top: 10px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+nav {
+
+    ul {
+        width: fit-content;
+        margin: 0px -17.5px;
+
+        li {
+            font-family: $fontArial;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            list-style: none;
+            display: inline-block;
+            margin: 0 17.5px;
+
+            a{
+                text-decoration: none;
+                color: $color-dark;
+                transition: .2s;
+            }
+
+            a:hover {
+                color: #292929;
+                transition: .2s;
+            }
+
+            .main-link {
+                border-bottom: 3px solid $color-primary;
+            }
+
+            a:active {
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+}
