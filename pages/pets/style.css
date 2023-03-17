@@ -181,21 +181,26 @@ nav ul li a:active {
 }
 .our-friends .friends-wrapper .pagination {
   margin: 0px auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .our-friends .friends-wrapper .pagination button {
   width: 52px;
   height: 52px;
   border-radius: 100px;
-  margin: 0px 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
+  letter-spacing: -2px;
   border: 2px solid #CDCDCD;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -270,4 +275,51 @@ footer .footer-wrapper .location a {
 }
 footer .footer-wrapper div img {
   display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  [class*=-wrapper] {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .our-friends .friends-wrapper {
+    padding-bottom: 76px;
+  }
+  .our-friends .friends-wrapper .pets-cards {
+    margin: 30px 64px;
+  }
+  .our-friends .friends-wrapper .pets-cards .hide {
+    display: none;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+  footer h3 {
+    margin-top: 0px;
+  }
+  footer .footer-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-wrapper .contacts {
+    margin-left: 34px;
+  }
+  footer .footer-wrapper .location {
+    margin-right: 34px;
+  }
+  footer .footer-wrapper div {
+    width: 100%;
+    margin-top: 65px;
+  }
+  footer .footer-wrapper div img {
+    display: block;
+    max-width: 300px;
+    margin: 0px auto;
+  }
 }

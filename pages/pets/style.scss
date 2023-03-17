@@ -190,19 +190,20 @@ nav {
 
         .pagination {
             margin: 0px auto;
-            width: fit-content;
+            width: 340px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             button {
                 width: 52px;
                 height: 52px;
                 border-radius: 100px;
-                margin: 0px 10px;
                 font-family: $fontGeorgia;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
-                line-height: 115%;
-                letter-spacing: 0.06em;
+                letter-spacing: -2px;
                 border: 2px solid #CDCDCD;
                 transition: .2s;
             }
@@ -281,6 +282,59 @@ footer {
         div {
             img {
                 display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    [class*="-wrapper"] {
+        max-width: 768px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .our-friends {
+        .friends-wrapper {
+            padding-bottom: 76px;
+
+            .pets-cards {
+                margin: 30px 64px;
+
+                .hide {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding-top: 30px;
+
+        h3 {
+            margin-top: 0px;
+        }
+
+        .footer-wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .contacts {
+                margin-left: 34px;
+            }
+
+            .location {
+                margin-right: 34px;
+            }
+
+            div {
+                width: 100%;
+                margin-top: 65px;
+                img {
+                    display: block;
+                    max-width: 300px;
+                    margin: 0px auto;
+                }
             }
         }
     }
