@@ -13,6 +13,7 @@ $hover-primary: #FDDCC4;
 [class*="-wrapper"] {
     width: 100%;
     max-width: 1280px;
+    min-width: 320px;
     margin: 0px auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -30,6 +31,7 @@ h3 {
 
 header{
     width: 100%;
+    min-width: 320px;
     position: absolute;
 
     .header-wrapper {
@@ -41,6 +43,7 @@ header{
 
         .logo {
             width: 184px;
+            z-index: 100;
 
             h1 {
                 color: $color-primary;
@@ -116,6 +119,7 @@ nav {
 
 .not-only {
     width: 100%;
+    min-width: 320px;
     background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
     padding-top: 125.25px;
 
@@ -224,6 +228,7 @@ nav {
 
 .our-friends {
     background-color: #F6F6F6;
+    min-width: 320px;
 
     .our-friends-wrapper {
         padding-top: 80px;
@@ -382,6 +387,7 @@ nav {
 
 .donation {
     background-color: #F6F6F6;
+    min-width: 320px;
 
     .donation-wrapper {
         padding-top: 80px;
@@ -456,6 +462,7 @@ nav {
 footer {
     background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
     padding-top: 40px;
+    min-width: 320px;
 
     h3 {
         color: #FFFFFF;
@@ -662,6 +669,18 @@ footer {
         font-size: 25px;
     }
 
+    // body { // добавлять к боди при открытом меню
+    //     overflow: hidden;
+    // }
+
+    // header { //добавлять при открытом меню
+    //     top: 0px;
+    //     left: 0px;
+    //     right: 0px;
+    //     bottom: 0px;
+
+    // }
+
     #burger__menu {
         display: block;
         width: 30px;
@@ -669,6 +688,7 @@ footer {
         border-top: 2px solid $color-primary;
         border-bottom: 2px solid $color-primary;
         margin: 0px auto;
+        z-index: 100;
 
         div {
             width: 30px;
@@ -678,46 +698,53 @@ footer {
         }
     }
 
+    #burger__menu.active {
+        transform: rotate(90deg);
+    }
+
     nav {
-
         display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color:  #292929;
 
-        // ul {
-        //     width: fit-content;
-        //     margin: 0px -17.5px;
 
-        //     li {
-        //         font-family: $fontArial;
-        //         font-style: normal;
-        //         font-weight: 400;
-        //         font-size: 15px;
-        //         line-height: 160%;
-        //         list-style: none;
-        //         display: inline-block;
-        //         margin: 0 16.5px;
+        ul {
+            width: 100%;
+            margin: 0px;
+            transform: translateY(50%);
 
-        //         a{
-        //             text-decoration: none;
-        //             color: #CDCDCD;
-        //             transition: .2s;
-        //         }
+            li {
+                font-size: 32px;
+                display: block;
+                width: fit-content;
+                margin: 20px auto;
 
-        //         a:hover {
-        //             color: #FAFAFA;
-        //             transition: .2s;
-        //         }
+                a{
+                    text-decoration: none;
+                    color: #CDCDCD;
+                    transition: .2s;
+                }
 
-        //         .main-link {
-        //             border-bottom: 3px solid $color-primary;
-        //             color: #FAFAFA;
-        //         }
+                a:hover {
+                    color: #FAFAFA;
+                    transition: .2s;
+                }
 
-        //         a:active {
-        //             border-bottom: 3px solid $color-primary;
-        //             color: #FAFAFA;
-        //         }
-        //     }
-        // }
+                .main-link {
+                    border-bottom: 3px solid $color-primary;
+                    color: #FAFAFA;
+                }
+
+                a:active {
+                    border-bottom: 3px solid $color-primary;
+                    color: #FAFAFA;
+                }
+            }
+        }
     }
 
     .not-only {

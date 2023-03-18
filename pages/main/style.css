@@ -9,6 +9,7 @@
 [class*=-wrapper] {
   width: 100%;
   max-width: 1280px;
+  min-width: 320px;
   margin: 0px auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -26,6 +27,7 @@ h3 {
 
 header {
   width: 100%;
+  min-width: 320px;
   position: absolute;
 }
 header .header-wrapper {
@@ -44,6 +46,7 @@ header .header-wrapper {
 }
 header .header-wrapper .logo {
   width: 184px;
+  z-index: 100;
 }
 header .header-wrapper .logo h1 {
   color: #F1CDB3;
@@ -111,6 +114,7 @@ nav ul li a:active {
 
 .not-only {
   width: 100%;
+  min-width: 320px;
   background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
   padding-top: 125.25px;
 }
@@ -218,6 +222,7 @@ nav ul li a:active {
 
 .our-friends {
   background-color: #F6F6F6;
+  min-width: 320px;
 }
 .our-friends .our-friends-wrapper {
   padding-top: 80px;
@@ -371,6 +376,7 @@ nav ul li a:active {
 
 .donation {
   background-color: #F6F6F6;
+  min-width: 320px;
 }
 .donation .donation-wrapper {
   padding-top: 80px;
@@ -445,6 +451,7 @@ nav ul li a:active {
 footer {
   background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
   padding-top: 40px;
+  min-width: 320px;
 }
 footer h3 {
   color: #FFFFFF;
@@ -643,6 +650,7 @@ footer .footer-wrapper div img {
     border-top: 2px solid #F1CDB3;
     border-bottom: 2px solid #F1CDB3;
     margin: 0px auto;
+    z-index: 100;
   }
   #burger__menu div {
     width: 30px;
@@ -651,8 +659,52 @@ footer .footer-wrapper div img {
     margin-top: 8px;
   }
 
+  #burger__menu.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
   nav {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #292929;
+  }
+  nav ul {
+    width: 100%;
+    margin: 0px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  nav ul li {
+    font-size: 32px;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #CDCDCD;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  nav ul li a:hover {
+    color: #FAFAFA;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  nav ul li .main-link {
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+  }
+  nav ul li a:active {
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
   }
 
   .not-only .not-only-wrapper section {
