@@ -722,27 +722,6 @@ footer {
                 display: block;
                 width: fit-content;
                 margin: 20px auto;
-
-                a{
-                    text-decoration: none;
-                    color: #CDCDCD;
-                    transition: .2s;
-                }
-
-                a:hover {
-                    color: #FAFAFA;
-                    transition: .2s;
-                }
-
-                .main-link {
-                    border-bottom: 3px solid $color-primary;
-                    color: #FAFAFA;
-                }
-
-                a:active {
-                    border-bottom: 3px solid $color-primary;
-                    color: #FAFAFA;
-                }
             }
         }
     }

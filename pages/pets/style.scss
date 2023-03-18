@@ -12,6 +12,7 @@ $hover-primary: #FDDCC4;
 }
 
 [class*="-wrapper"] {
+    min-width: 320px;
     width: 100%;
     max-width: 1280px;
     margin: 0px auto;
@@ -21,6 +22,7 @@ $hover-primary: #FDDCC4;
 
 header{
     width: 100%;
+    min-width: 320px;
 
     .header-wrapper {
         padding-top: 30px;
@@ -39,6 +41,7 @@ header{
 
         .logo {
             width: 184px;
+            z-index: 100;
 
             h1 {
                 color: $color-dark;
@@ -107,6 +110,7 @@ nav {
 }
 
 .our-friends {
+    min-width: 320px;
     background-color: #F6F6F6;
 
     .friends-wrapper {
@@ -230,6 +234,7 @@ nav {
 footer {
     background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
     padding-top: 40px;
+    min-width: 320px;
 
     h2 {
         font-family: $fontGeorgia;
@@ -287,7 +292,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 1279.9px) {
     [class*="-wrapper"] {
         max-width: 768px;
         padding-left: 30px;
@@ -333,6 +338,132 @@ footer {
                 img {
                     display: block;
                     max-width: 300px;
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.9px) {
+    [class*="-wrapper"] {
+        max-width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    // body { // добавлять к боди при открытом меню
+    //     overflow: hidden;
+    // }
+
+    // header { //добавлять при открытом меню
+    //     top: 0px;
+    //     left: 0px;
+    //     right: 0px;
+    //     bottom: 0px;
+    // }
+
+    #burger__menu {
+        display: block;
+        width: 30px;
+        height: 22px;
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        margin: 0px auto;
+        z-index: 100;
+
+        div {
+            width: 30px;
+            height: 2px;
+            background-color: #000000;
+            margin-top: 8px;
+        }
+    }
+
+    #burger__menu.active {
+        transform: rotate(90deg);
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color:  #ffffff;
+
+
+        ul {
+            width: 100%;
+            margin: 0px;
+            transform: translateY(50%);
+
+            li {
+                font-size: 32px;
+                display: block;
+                width: fit-content;
+                margin: 20px auto;
+            }
+        }
+    }
+
+    .our-friends {
+        .friends-wrapper {
+            padding-top: 42px;
+            padding-bottom: 42px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .pets-cards {
+                margin: 42px 15px;
+
+                .hide {
+                    display: none;
+                }
+            }
+
+            .pagination {
+                width: 300px;
+            }
+
+        }
+    }
+
+    footer {
+        .footer-wrapper {
+            justify-content: center;
+            .contacts, .location {
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 40px;
+                max-width: 300px;
+
+                h2 {
+                    font-size: 25px;
+                    max-width: 290px;
+                    text-align: center;
+                    margin: 0px auto;
+                }
+
+                a {
+                    width: fit-content;
+                    margin: 40px auto 0px;
+                }
+            }
+
+            .location a {
+                width: 100%;
+            }
+
+            div {
+                width: 100%;
+                margin-top: 0px;
+                img {
+                    display: block;
+                    max-width: 260px;
                     margin: 0px auto;
                 }
             }

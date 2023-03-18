@@ -687,25 +687,6 @@ footer .footer-wrapper div img {
     width: fit-content;
     margin: 20px auto;
   }
-  nav ul li a {
-    text-decoration: none;
-    color: #CDCDCD;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  nav ul li a:hover {
-    color: #FAFAFA;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  nav ul li .main-link {
-    border-bottom: 3px solid #F1CDB3;
-    color: #FAFAFA;
-  }
-  nav ul li a:active {
-    border-bottom: 3px solid #F1CDB3;
-    color: #FAFAFA;
-  }
 
   .not-only .not-only-wrapper section {
     text-align: center;
