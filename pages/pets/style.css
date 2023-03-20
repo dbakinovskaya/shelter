@@ -39,6 +39,7 @@ header .header-wrapper .logo-link {
   width: 184px;
   height: 60px;
   position: absolute;
+  z-index: 101;
 }
 header .header-wrapper .logo {
   width: 184px;
@@ -288,7 +289,6 @@ footer .footer-wrapper div img {
     padding-left: 30px;
     padding-right: 30px;
   }
-
   .our-friends .friends-wrapper {
     padding-bottom: 76px;
   }
@@ -298,7 +298,6 @@ footer .footer-wrapper div img {
   .our-friends .friends-wrapper .pets-cards .hide {
     display: none;
   }
-
   footer {
     padding-top: 30px;
   }
@@ -334,7 +333,6 @@ footer .footer-wrapper div img {
     padding-left: 10px;
     padding-right: 10px;
   }
-
   #burger__menu {
     display: block;
     width: 30px;
@@ -350,12 +348,10 @@ footer .footer-wrapper div img {
     background-color: #000000;
     margin-top: 8px;
   }
-
   #burger__menu.active {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-
   nav {
     display: none;
     position: absolute;
@@ -379,7 +375,6 @@ footer .footer-wrapper div img {
     width: fit-content;
     margin: 20px auto;
   }
-
   .our-friends .friends-wrapper {
     padding-top: 42px;
     padding-bottom: 42px;
@@ -396,7 +391,6 @@ footer .footer-wrapper div img {
   .our-friends .friends-wrapper .pagination {
     width: 300px;
   }
-
   footer .footer-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
