@@ -19,10 +19,6 @@ $hover-primary: #FDDCC4;
     padding-right: 40px;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 h3 {
     font-family: $fontGeorgia;
     font-style: normal;
@@ -696,7 +692,7 @@ footer {
         overflow: hidden;
     }
 
-    header { //добавлять при открытом меню
+    header {
         top: 0px;
         bottom: 0px;
         overflow: hidden;
@@ -726,7 +722,11 @@ footer {
     }
 
     #burger__menu.active__menu {
+        transition: all .5s ease-out;
         transform: rotate(90deg);
+        position: absolute;
+        top: 48px;
+        right: 53px;
     }
 
     nav {
@@ -753,6 +753,13 @@ footer {
 
     header.open__menu nav {
         right: 0;
+    }
+
+    header.open__menu .logo {
+        position: absolute;
+        top: 30px;
+        right: 126px;
+        transition: all .5s ease-out;
     }
 
     .not-only {
