@@ -15,6 +15,10 @@
   padding-right: 40px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
@@ -649,6 +653,7 @@ footer .footer-wrapper div img {
   header {
     top: 0px;
     bottom: 0px;
+    overflow: hidden;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }

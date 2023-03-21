@@ -19,6 +19,10 @@ $hover-primary: #FDDCC4;
     padding-right: 40px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h3 {
     font-family: $fontGeorgia;
     font-style: normal;
@@ -695,6 +699,7 @@ footer {
     header { //добавлять при открытом меню
         top: 0px;
         bottom: 0px;
+        overflow: hidden;
         transition: all .5s ease-out;
     }
 
