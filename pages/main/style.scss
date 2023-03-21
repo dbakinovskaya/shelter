@@ -688,17 +688,19 @@ footer {
         font-size: 25px;
     }
 
-    // body { // добавлять к боди при открытом меню
-    //     overflow: hidden;
-    // }
+    .hide {
+        overflow: hidden;
+    }
 
-    // header { //добавлять при открытом меню
-    //     top: 0px;
-    //     left: 0px;
-    //     right: 0px;
-    //     bottom: 0px;
+    header { //добавлять при открытом меню
+        top: 0px;
+        bottom: 0px;
+        transition: all .5s ease-out;
+    }
 
-    // }
+    .open__menu {
+        background-color:  rgba(41, 41, 41, 0.6);
+    }
 
     #burger__menu {
         display: block;
@@ -708,6 +710,7 @@ footer {
         border-bottom: 2px solid $color-primary;
         margin: 0px auto;
         z-index: 100;
+        transition: all .5s ease-out;
 
         div {
             width: 30px;
@@ -717,25 +720,23 @@ footer {
         }
     }
 
-    #burger__menu.active {
+    #burger__menu.active__menu {
         transform: rotate(90deg);
     }
 
     nav {
-        display: none;
+
         position: absolute;
         top: 0px;
-        left: 0px;
-        right: 0px;
+        right: -100%;
         bottom: 0px;
         background-color:  #292929;
-
+        transition: all .5s ease-out;
+        width: 320px;
+        margin-left: -10px;
 
         ul {
-            width: 100%;
-            margin: 0px;
-            transform: translateY(50%);
-
+            margin: 260px auto;
             li {
                 font-size: 32px;
                 display: block;
@@ -743,6 +744,10 @@ footer {
                 margin: 20px auto;
             }
         }
+    }
+
+    header.open__menu nav {
+        right: 0;
     }
 
     .not-only {
