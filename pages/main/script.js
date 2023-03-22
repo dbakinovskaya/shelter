@@ -134,8 +134,6 @@ function getCardQuantity() {
     return Math.round(dom.caruselContainer.clientWidth/(360));
 }
 
-
-
 function buildPetCard(pet) {
     return `
         <figure>
@@ -146,6 +144,27 @@ function buildPetCard(pet) {
     `
 }
 
+function buildModalWindow(pet) {
+    return `
+        <div class="modal__window">
+            <div class="modal__img">
+                <img src="${pet.img}" alt="pet picture">
+            </div>
+            <div class="description">
+                <h3>${pet.name}</h3>
+                <h4>${pet.type} - ${pet.breed}</h4>
+                <p>${pet.description}</p>
+                <ul>
+                    <li><b>Age:</b> ${pet.age}</li>
+                    <li><b>Inoculations:</b> ${pet.inoculations.join(', ')}</li>
+                    <li><b>Diseases:</b> ${pet.diseases.join(', ')}</li>
+                    <li><b>Parasites:</b> ${pet.parasites.join(', ')}</li>
+                </ul>
+            </div>
+            <button class="close__modal"> &#10006 </button>
+        </div>
+    `
+}
 
 function shufflePetCards() {
     const quantity = getCardQuantity();
@@ -159,14 +178,19 @@ function shufflePetCards() {
     return arr;
 }
 
-let randomIdx = shufflePetCards()
+let randomIdx = shufflePetCards();
 
 for (let i of randomIdx) {
     let card = document.createElement('div');
     card.innerHTML = buildPetCard(pet[i]);
     card.className = 'card';
-    dom.caruselContainer.append(card);
-}
+
+    let modal = document.createElement('div');
+    modal.innerHTML = buildModalWindow(pet[i]);
+    modal.className = 'modal__container';
+
+    dom.caruselContainer.append(card, modal);
+};
 
 
 function changeCards (evt) {
@@ -205,3 +229,34 @@ function getNewCards() {
     randomIdx = newIdx;
     return newIdx;
 }
+
+function showModal(evt) {
+    const elem = evt.target;
+    const scroll = scrollWidth();
+    console.log(scroll);
+    if (elem.closest('div.card')) {
+        const modal = elem.closest('div.card').nextSibling;
+        modal.style.display = 'block';
+        modal.style.top = window.pageYOffset + 'px';
+        dom.body.style.overflow = 'hidden';
+        dom.body.style.marginLeft = '-' + scroll + 'px';
+    }
+}
+
+function closeModal(evt) {
+    const elem = evt.target;
+    if (elem.closest('div.modal__container') && (!elem.closest('div.modal__window') || elem.className == 'close__modal')) {
+        const modal = elem.closest('div.modal__container');
+        modal.style.display = 'none';
+        dom.body.style.overflow = 'auto';
+        dom.body.style.marginLeft = '0px';
+    }
+}
+
+function scrollWidth() {
+    const scroll = window.innerWidth - document.documentElement.clientWidth;
+    return scroll;
+}
+
+dom.caruselContainer.addEventListener('click', showModal);
+dom.caruselContainer.addEventListener('click', closeModal);
