@@ -335,10 +335,12 @@ nav ul li a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FAFAFA;
   border-radius: 9px;
   width: 900px;
-  height: 501px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -654,8 +656,25 @@ footer .footer-wrapper div img {
   .our-friends .our-friends-wrapper section .carusel .carusel-container .card {
     margin: 0px 20px;
   }
-  .our-friends .our-friends-wrapper section .carusel .carusel-container .third {
-    display: none;
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window {
+    width: 630px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .modal__img {
+    margin-right: 11px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .modal__img img {
+    width: 350px;
+    height: 350px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description {
+    padding: 10px 9px 32px 0px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description p {
+    margin: 20px 0px;
+    font-size: 13px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description ul li {
+    margin-bottom: 5px;
   }
   .help-wrapper {
     padding-top: 80px;
@@ -890,8 +909,28 @@ footer .footer-wrapper div img {
     max-width: 270px;
     margin: 0px 15px;
   }
-  .our-friends .our-friends-wrapper section .carusel .carusel-container .second {
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window {
+    width: 240px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .modal__img {
     display: none;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description {
+    padding: 10px 10px 5px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description h3 {
+    margin: 0px auto 10px;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description h4 {
+    text-align: center;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description p {
+    margin: 20px 0px 24px;
+    font-size: 13px;
+    text-align: justify;
+  }
+  .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container .modal__window .description ul li {
+    margin-bottom: 5px;
   }
   .our-friends .our-friends-wrapper section .carusel .left {
     -webkit-box-ordinal-group: 3;

@@ -346,10 +346,10 @@ nav {
 
                         .modal__window {
                             display: flex;
+                            align-items: center;
                             background: #FAFAFA;
                             border-radius: 9px;
                             width: 900px;
-                            height: 501px;
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -403,7 +403,6 @@ nav {
                                         content: "•";
                                         margin-right: 10px;
                                         font-size: 12px;
-
                                     }
 
 
@@ -698,8 +697,35 @@ footer {
                             margin: 0px 20px;
                         }
 
-                        .third {
-                            display: none;
+                        .modal__container {
+                            .modal__window {
+                                width: 630px;
+
+                                .modal__img {
+                                    margin-right: 11px;
+
+                                    img {
+                                        width: 350px;
+                                        height: 350px;
+                                    }
+                                }
+
+                                .description {
+                                    padding: 10px 9px 32px 0px;
+
+                                    p {
+                                        margin: 20px 0px;
+                                        font-size: 13px;
+                                    }
+
+                                    ul {
+
+                                        li {
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -955,8 +981,39 @@ footer {
                             margin: 0px 15px;
                         }
 
-                        .second {
-                            display: none;
+                        .modal__container {
+                            .modal__window {
+                                width: 240px;
+
+                                .modal__img {
+                                    display: none;
+                                }
+
+                                .description {
+                                    padding: 10px 10px 5px;
+
+                                    h3 {
+                                        margin: 0px auto 10px;
+                                    }
+
+                                    h4 {
+                                        text-align: center;
+                                    }
+
+                                    p {
+                                        margin: 20px 0px 24px;
+                                        font-size: 13px;
+                                        text-align: justify;
+                                    }
+
+                                    ul {
+
+                                        li {
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
