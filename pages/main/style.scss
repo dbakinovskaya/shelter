@@ -888,9 +888,10 @@ footer {
     }
 
     nav {
+        display: none;
         position: absolute;
         top: 0px;
-        right: -100%;
+        right: 0px;
         bottom: 0px;
         background-color:  #292929;
         transition: all .5s ease-out;
@@ -898,7 +899,12 @@ footer {
         margin-left: -10px;
 
         ul {
-            margin: 260px auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 243px;
+            margin: 0px;
             li {
                 font-size: 32px;
                 display: block;
@@ -909,7 +915,18 @@ footer {
     }
 
     header.open__menu nav {
-        right: 0;
+        display: block;
+        animation-duration: .5s;
+        animation-name: slidein;
+        @keyframes slidein {
+            from {
+                margin-right: -100%;
+            }
+            to {
+                margin-right: 0;
+            }
+
+        }
     }
 
     header.open__menu .logo {

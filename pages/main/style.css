@@ -821,9 +821,10 @@ footer .footer-wrapper div img {
             animation-name: show;
   }
   nav {
+    display: none;
     position: absolute;
     top: 0px;
-    right: -100%;
+    right: 0px;
     bottom: 0px;
     background-color: #292929;
     -webkit-transition: all 0.5s ease-out;
@@ -832,7 +833,13 @@ footer .footer-wrapper div img {
     margin-left: -10px;
   }
   nav ul {
-    margin: 260px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 243px;
+    margin: 0px;
   }
   nav ul li {
     font-size: 32px;
@@ -843,7 +850,27 @@ footer .footer-wrapper div img {
     margin: 20px auto;
   }
   header.open__menu nav {
-    right: 0;
+    display: block;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  @-webkit-keyframes slidein {
+    from {
+      margin-right: -100%;
+    }
+    to {
+      margin-right: 0;
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-right: -100%;
+    }
+    to {
+      margin-right: 0;
+    }
   }
   header.open__menu .logo {
     position: absolute;
