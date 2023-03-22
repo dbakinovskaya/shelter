@@ -175,6 +175,11 @@ nav ul li a:active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+.not-only .not-only-wrapper section a:active {
+  background-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 .not-only .not-only-wrapper div {
   width: 100%;
   min-width: 698px;
@@ -259,6 +264,12 @@ nav ul li a:active {
   transition: 0.2s;
   cursor: pointer;
 }
+.our-friends .our-friends-wrapper section .carusel button:active {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 .our-friends .our-friends-wrapper section .carusel .carusel-container {
   width: 100%;
   height: 100%;
@@ -305,10 +316,16 @@ nav ul li a:active {
   transition: 0.2s;
   cursor: pointer;
 }
+.our-friends .our-friends-wrapper section .carusel .carusel-container .card:active button {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 .our-friends .our-friends-wrapper section .carusel .carusel-container .card:hover {
   cursor: pointer;
 }
-.our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:hover div .close__modal {
+.our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:hover div .close__modal, .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:active div .close__modal {
   background-color: #F1CDB3;
   -webkit-transition: all 0.5 ease-out;
   transition: all 0.5 ease-out;
@@ -316,12 +333,13 @@ nav ul li a:active {
 .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:hover div:hover .close__modal {
   background-color: rgba(0, 0, 0, 0);
 }
-.our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:hover div:hover .close__modal:hover {
+.our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container:hover div:hover .close__modal:hover, .our-friends .our-friends-wrapper section .carusel .carusel-container .close__modal:active {
   background-color: #F1CDB3;
   -webkit-transition: all 0.5 ease-out;
   transition: all 0.5 ease-out;
 }
 .our-friends .our-friends-wrapper section .carusel .carusel-container .modal__container {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -418,6 +436,11 @@ nav ul li a:active {
   transition: 0.2s;
 }
 .our-friends .our-friends-wrapper section a:hover {
+  background-color: #FDDCC4;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.our-friends .our-friends-wrapper section a:active {
   background-color: #FDDCC4;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -757,7 +780,7 @@ footer .footer-wrapper div img {
   .hide {
     overflow: hidden;
   }
-  header {
+  header.open__menu {
     top: 0px;
     bottom: 0px;
     overflow: hidden;
