@@ -198,9 +198,16 @@ function changeCards (evt) {
     if(elem.classList.contains('arrow')) {
         let newCards = getNewCards();
         const cards = document.querySelectorAll('.card');
+        const modals = document.querySelectorAll('.modal__container');
         let count = 0;
         for(let card of cards) {
             card.innerHTML = buildPetCard(pet[newCards[count]]);
+            count++;
+        }
+
+        count = 0;
+        for(let modal of modals) {
+            modal.innerHTML = buildModalWindow(pet[newCards[count]]);
             count++;
         }
     }
