@@ -205,4 +205,3 @@ function getNewCards() {
     randomIdx = newIdx;
     return newIdx;
 }
-
