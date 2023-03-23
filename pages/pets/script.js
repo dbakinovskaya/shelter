@@ -293,3 +293,34 @@ dom.lastBtn.addEventListener('click', function() {
     checkButtons(currentPage);
 });
 
+function showModal(evt) {
+    const elem = evt.target;
+    const scroll = scrollWidth();
+
+    if (elem.closest('div.card')) {
+        const modal = elem.closest('div.card').nextSibling;
+        modal.style.display = 'block';
+        modal.style.top = window.pageYOffset + 'px';
+        dom.body.style.overflow = 'hidden';
+        dom.body.style.marginLeft = '-' + scroll + 'px';
+    }
+}
+
+function closeModal(evt) {
+    const elem = evt.target;
+
+    if (elem.closest('div.modal__container') && (!elem.closest('div.modal__window') || elem.className == 'close__modal')) {
+        const modal = elem.closest('div.modal__container');
+        modal.style.display = 'none';
+        dom.body.style.overflow = 'auto';
+        dom.body.style.marginLeft = '0px';
+    }
+}
+
+function scrollWidth() {
+    const scroll = window.innerWidth - document.documentElement.clientWidth;
+    return scroll;
+}
+
+dom.cardsWrapper.addEventListener('click', showModal);
+dom.cardsWrapper.addEventListener('click', closeModal);

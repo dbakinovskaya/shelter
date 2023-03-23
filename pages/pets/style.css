@@ -281,6 +281,10 @@ nav ul li a:active {
   font-size: 17px;
   padding-top: 2px;
   background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #F1CDB3;
+}
+.our-friends .friends-wrapper .pets-cards .modal__container .modal__window .close__modal:hover {
+  cursor: pointer;
 }
 .our-friends .friends-wrapper .pagination {
   margin: 0px auto;

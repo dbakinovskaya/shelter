@@ -246,7 +246,6 @@ function getNewCards() {
 function showModal(evt) {
     const elem = evt.target;
     const scroll = scrollWidth();
-    console.log(scroll);
     if (elem.closest('div.card')) {
         const modal = elem.closest('div.card').nextSibling;
         modal.style.display = 'block';
