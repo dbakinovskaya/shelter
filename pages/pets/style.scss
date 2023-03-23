@@ -195,6 +195,112 @@ nav {
             .card:hover {
                 cursor: pointer;
             }
+
+            .modal__container:hover div .close__modal {
+                background-color: $color-primary;
+                transition: all .5 ease-out;
+            }
+
+            .modal__container:hover div:hover .close__modal {
+                background-color: rgba(0, 0, 0, 0);
+            }
+
+            .modal__container:hover div:hover .close__modal:hover {
+                background-color: $color-primary;
+                transition: all .5 ease-out;
+            }
+
+            .modal__container {
+                min-width: 320px;
+                top:0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                display: none;
+                z-index: 200;
+                position: absolute;
+                background-color: rgba(41, 41, 41, 0.6);
+
+                .modal__window {
+                    display: flex;
+                    align-items: center;
+                    background: #FAFAFA;
+                    border-radius: 9px;
+                    width: 900px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+
+                    .modal__img {
+                        margin-right: 29px;
+
+                        img {
+                            width: 500px;
+                            height: 500px;
+                            border-radius: 9px;
+                        }
+                    }
+
+                    .description {
+                        padding: 50px 20px 78px 0px;
+                        font-family: $fontGeorgia;
+                        font-style: normal;
+
+                        h3 {
+                            color: #000000;
+                            width: fit-content;
+                            margin: 0px;
+                            margin-bottom: 10px;
+                        }
+
+                        h4 {
+                            font-weight: lighter;
+                            font-size: 20px;
+                        }
+
+                        p {
+                            margin: 40px 0px;
+                            font-size: 15px;
+                            line-height: 17px;
+                            letter-spacing: 0.06em;
+                        }
+
+                        ul {
+
+                            li {
+                                list-style-type: none;
+                                font-size: 15px;
+                                margin-bottom: 10px;
+                            }
+
+                            li::before {
+                                color: $color-primary;
+                                content: "•";
+                                margin-right: 10px;
+                                font-size: 12px;
+                            }
+
+
+                        }
+
+
+                    }
+
+                    .close__modal {
+                        position: absolute;
+                        border-radius: 50%;
+                        right: -52px;
+                        top: -52px;
+                        width: 52px;
+                        height: 52px;
+                        font-size: 17px;
+                        padding-top: 2px;
+                        background-color:rgba(0, 0, 0, 0);
+                    }
+                }
+            }
         }
 
         .pagination {
@@ -217,16 +323,16 @@ nav {
                 transition: .2s;
             }
 
-            .active {
+            .pageNumber {
                 background-color: $color-primary;
             }
 
-            .active, .next {
+            .active, .pageNumber {
                 border: 2px solid $color-primary;
 
             }
 
-            .next:hover {
+            .active:hover {
                 background-color: $hover-primary;
                 border-color: $hover-primary;
                 transition: .2s;
@@ -311,8 +417,35 @@ footer {
             .pets-cards {
                 margin: 30px 64px;
 
-                .hide {
-                    display: none;
+                .modal__container {
+                    .modal__window {
+                        width: 630px;
+
+                        .modal__img {
+                            margin-right: 11px;
+
+                            img {
+                                width: 350px;
+                                height: 350px;
+                            }
+                        }
+
+                        .description {
+                            padding: 10px 9px 32px 0px;
+
+                            p {
+                                margin: 20px 0px;
+                                font-size: 13px;
+                            }
+
+                            ul {
+
+                                li {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -438,15 +571,45 @@ footer {
             .pets-cards {
                 margin: 42px 15px;
 
-                .hide {
-                    display: none;
+                .modal__container {
+                    .modal__window {
+                        width: 240px;
+
+                        .modal__img {
+                            display: none;
+                        }
+
+                        .description {
+                            padding: 10px 10px 5px;
+
+                            h3 {
+                                margin: 0px auto 10px;
+                            }
+
+                            h4 {
+                                text-align: center;
+                            }
+
+                            p {
+                                margin: 20px 0px 24px;
+                                font-size: 13px;
+                                text-align: justify;
+                            }
+
+                            ul {
+
+                                li {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
             .pagination {
                 width: 300px;
             }
-
         }
     }
 
