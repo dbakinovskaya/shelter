@@ -301,6 +301,7 @@ function showModal(evt) {
         const modal = elem.closest('div.card').nextSibling;
         modal.style.display = 'block';
         modal.style.top = window.pageYOffset + 'px';
+        modal.style.bottom ='-' + window.pageYOffset + 'px';
         dom.body.style.overflow = 'hidden';
         dom.body.style.marginLeft = '-' + scroll + 'px';
     }
