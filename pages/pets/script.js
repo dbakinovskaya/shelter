@@ -292,3 +292,4 @@ dom.lastBtn.addEventListener('click', function() {
     changePage(currentPage);
     checkButtons(currentPage);
 });
+
