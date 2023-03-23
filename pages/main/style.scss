@@ -823,19 +823,6 @@ footer {
         overflow: hidden;
     }
 
-    .header-wrapper {
-        animation-duration: 5ms;
-        animation-name: showel;
-        @keyframes showel {
-            from {
-                opacity: 100%;
-            }
-            to {
-                opacity: 0%;
-            }
-        }
-    }
-
     header.open__menu {
         position: absolute;
         top: 0px;

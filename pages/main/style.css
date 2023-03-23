@@ -756,28 +756,6 @@ footer .footer-wrapper div img {
   .hide {
     overflow: hidden;
   }
-  .header-wrapper {
-    -webkit-animation-duration: 5ms;
-            animation-duration: 5ms;
-    -webkit-animation-name: showel;
-            animation-name: showel;
-  }
-  @-webkit-keyframes showel {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0%;
-    }
-  }
-  @keyframes showel {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0%;
-    }
-  }
   header.open__menu {
     position: absolute;
     top: 0px;
