@@ -29,7 +29,6 @@ h3 {
 header {
   width: 100%;
   min-width: 320px;
-  position: absolute;
 }
 header .header-wrapper {
   padding-top: 60px;
@@ -119,6 +118,7 @@ nav ul li .main-link {
   min-width: 320px;
   background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
   padding-top: 121px;
+  margin-top: -120.2px;
 }
 .not-only .not-only-wrapper {
   display: -webkit-box;
@@ -604,6 +604,7 @@ footer .footer-wrapper div img {
     padding-top: 30px;
   }
   .not-only {
+    margin-top: -90.2px;
     padding-top: 90.19px;
   }
   .not-only .not-only-wrapper {
@@ -755,14 +756,36 @@ footer .footer-wrapper div img {
   .hide {
     overflow: hidden;
   }
+  .header-wrapper {
+    -webkit-animation-duration: 5ms;
+            animation-duration: 5ms;
+    -webkit-animation-name: showel;
+            animation-name: showel;
+  }
+  @-webkit-keyframes showel {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
+  @keyframes showel {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
   header.open__menu {
+    position: absolute;
     top: 0px;
     bottom: 0px;
+    height: 100%;
     overflow: hidden;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-  }
-  .open__menu {
     background-color: rgba(41, 41, 41, 0.6);
   }
   #burger__menu {
@@ -787,16 +810,9 @@ footer .footer-wrapper div img {
     transition: all 0.5s ease-out;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    position: absolute;
-    top: 48px;
-    right: 53px;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: show;
-            animation-name: show;
   }
   nav {
-    display: none;
+    width: 0px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -804,8 +820,8 @@ footer .footer-wrapper div img {
     background-color: #292929;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    width: 320px;
     margin-left: -10px;
+    overflow: hidden;
   }
   nav ul {
     position: absolute;
@@ -825,54 +841,7 @@ footer .footer-wrapper div img {
     margin: 20px auto;
   }
   header.open__menu nav {
-    display: block;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    -webkit-animation-name: slidein;
-            animation-name: slidein;
-  }
-  @-webkit-keyframes slidein {
-    from {
-      margin-right: -100%;
-    }
-    to {
-      margin-right: 0;
-    }
-  }
-  @keyframes slidein {
-    from {
-      margin-right: -100%;
-    }
-    to {
-      margin-right: 0;
-    }
-  }
-  header.open__menu .logo {
-    position: absolute;
-    top: 30px;
-    right: 126px;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: show;
-            animation-name: show;
-  }
-  @-webkit-keyframes show {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  @keyframes show {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
+    width: 320px;
   }
   .not-only .not-only-wrapper section {
     text-align: center;

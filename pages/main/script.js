@@ -1,8 +1,10 @@
 const dom = {
     body: document.querySelector('body'),
+    headerWrapper: document.querySelector('.header-wrapper'),
     header: document.querySelector('header'),
     menu: document.querySelector('nav'),
     burger: document.querySelector('#burger__menu'),
+    notOnly: document.querySelector('.not-only'),
     carusel: document.querySelector('.carusel'),
     caruselContainer: document.querySelector('.carusel-container'),
 };
@@ -21,11 +23,15 @@ function clickBurger(evt) {
 function showBurgerMenu () {
     dom.header.classList.add('open__menu');
     dom.body.classList.add('hide');
+    dom.headerWrapper.style.marginRight = '0px';
+    dom.notOnly.style.marginTop = '0px';
 }
 
 function closeBurgerMenu() {
     dom.header.classList.remove('open__menu');
     dom.body.classList.remove('hide');
+    dom.headerWrapper.style.marginRight = 'auto';
+    dom.notOnly.style.marginTop = '-90.2px';
 }
 
 dom.burger.addEventListener('click', clickBurger);

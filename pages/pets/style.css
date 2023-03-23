@@ -103,6 +103,10 @@ nav ul li a:active {
   border-bottom: 3px solid #F1CDB3;
 }
 
+#burger__menu {
+  display: none;
+}
+
 .our-friends {
   min-width: 320px;
   background-color: #F6F6F6;
@@ -333,6 +337,19 @@ footer .footer-wrapper div img {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .hide {
+    overflow: hidden;
+  }
+  header.open__menu {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    background-color: rgba(41, 41, 41, 0.6);
+  }
   #burger__menu {
     display: block;
     width: 30px;
@@ -341,6 +358,8 @@ footer .footer-wrapper div img {
     border-bottom: 2px solid #000000;
     margin: 0px auto;
     z-index: 100;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
   #burger__menu div {
     width: 30px;
@@ -348,24 +367,32 @@ footer .footer-wrapper div img {
     background-color: #000000;
     margin-top: 8px;
   }
-  #burger__menu.active {
+  #burger__menu.active__menu {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
   nav {
-    display: none;
+    width: 0px;
     position: absolute;
-    top: 120px;
-    left: 0px;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     background-color: #ffffff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin-left: -10px;
+    overflow: hidden;
   }
   nav ul {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 243px;
     margin: 0px;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
   }
   nav ul li {
     font-size: 32px;
@@ -374,6 +401,9 @@ footer .footer-wrapper div img {
     width: -moz-fit-content;
     width: fit-content;
     margin: 20px auto;
+  }
+  header.open__menu nav {
+    width: 320px;
   }
   .our-friends .friends-wrapper {
     padding-top: 42px;

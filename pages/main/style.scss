@@ -32,7 +32,6 @@ h3 {
 header{
     width: 100%;
     min-width: 320px;
-    position: absolute;
 
     .header-wrapper {
         padding-top: 60px;
@@ -122,6 +121,7 @@ nav {
     min-width: 320px;
     background: radial-gradient(at -35% 5%, #5B483A, #262425 80%);
     padding-top: 121px;
+    margin-top: -120.2px;
 
     .not-only-wrapper {
         display: flex;
@@ -641,6 +641,7 @@ footer {
     }
 
     .not-only {
+        margin-top: -90.2px;
         padding-top: 90.19px;
 
         .not-only-wrapper {
@@ -822,14 +823,26 @@ footer {
         overflow: hidden;
     }
 
-    header.open__menu {
-        top: 0px;
-        bottom: 0px;
-        overflow: hidden;
-        transition: all .5s ease-out;
+    .header-wrapper {
+        animation-duration: 5ms;
+        animation-name: showel;
+        @keyframes showel {
+            from {
+                opacity: 100%;
+            }
+            to {
+                opacity: 0%;
+            }
+        }
     }
 
-    .open__menu {
+    header.open__menu {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        height: 100%;
+        overflow: hidden;
+        transition: all .5s ease-out;
         background-color:  rgba(41, 41, 41, 0.6);
     }
 
@@ -854,23 +867,18 @@ footer {
     #burger__menu.active__menu {
         transition: all .5s ease-out;
         transform: rotate(90deg);
-        position: absolute;
-        top: 48px;
-        right: 53px;
-        animation-duration: 2s;
-        animation-name: show;
     }
 
     nav {
-        display: none;
+        width: 0px;
         position: absolute;
         top: 0px;
         right: 0px;
         bottom: 0px;
         background-color:  #292929;
         transition: all .5s ease-out;
-        width: 320px;
         margin-left: -10px;
+        overflow: hidden;
 
         ul {
             position: absolute;
@@ -889,35 +897,7 @@ footer {
     }
 
     header.open__menu nav {
-        display: block;
-        animation-duration: .5s;
-        animation-name: slidein;
-        @keyframes slidein {
-            from {
-                margin-right: -100%;
-            }
-            to {
-                margin-right: 0;
-            }
-
-        }
-    }
-
-    header.open__menu .logo {
-        position: absolute;
-        top: 30px;
-        right: 126px;
-        transition: all .5s ease-out;
-        animation-duration: 2s;
-        animation-name: show;
-        @keyframes show {
-            from {
-                opacity: 0%;
-            }
-            to {
-                opacity: 100%;
-            }
-        }
+        width: 320px;
     }
 
     .not-only {
