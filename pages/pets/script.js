@@ -185,7 +185,7 @@ function getCardQuantity() {
     }
 }
 
-function generateArr(quantity) {
+function generateArr() {
     let finalArr = [];
     while (finalArr.length != 48) {
         let first = shuffle();
@@ -215,7 +215,7 @@ function shuffle() {
 
 let currentPage = 1;
 const cardsQuantity = getCardQuantity();
-const idxArray = generateArr(cardsQuantity);
+const idxArray = generateArr();
 
 function showCards(arr, cells, page) {
     dom.cardsWrapper.innerHTML = '';
