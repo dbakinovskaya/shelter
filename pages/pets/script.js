@@ -192,7 +192,7 @@ function generateArr(quantity) {
         let second = shuffle();
         let third = shuffle();
         let part1 = second.slice(0, 4);
-        let part2 = second.slice(5,8);
+        let part2 = second.slice(4,8);
 
         if(!part1.includes(first[6]) && !part1.includes(first[7]) && !part2.includes(third[0]) && !part2.includes(third[1])) {
             finalArr = finalArr.concat(first, second, third);
