@@ -186,22 +186,31 @@ function getCardQuantity() {
 }
 
 function generateArr(quantity) {
-    let finalArr = []
-    let arr = [];
-
+    let finalArr = [];
     while (finalArr.length != 48) {
-        while (arr.length !=pet.length) {
-            let idx = Math.floor(Math.random() * (pet.length))
-            if (arr.indexOf(idx) == -1) {
-                arr.push(idx);
-            }
-        }
+        let first = shuffle();
+        let second = shuffle();
+        let third = shuffle();
+        let part1 = second.slice(0, 4);
+        let part2 = second.slice(5,8);
 
-        let page = arr.splice(0,quantity);
-        finalArr = finalArr.concat(page);
+        if(!part1.includes(first[6]) && !part1.includes(first[7]) && !part2.includes(third[0]) && !part2.includes(third[1])) {
+            finalArr = finalArr.concat(first, second, third);
+        }
     }
 
     return finalArr;
+}
+
+function shuffle() {
+    let arr = [];
+    while (arr.length !=pet.length) {
+        let idx = Math.floor(Math.random() * (pet.length))
+        if (arr.indexOf(idx) == -1) {
+            arr.push(idx);
+        }
+    }
+    return arr;
 }
 
 let currentPage = 1;
